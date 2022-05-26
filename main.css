@@ -6,7 +6,78 @@
 }
 
 body {
-  margin: 25%;
-  font-size: 1.5rem;
+  margin: 10%;
+  font-size: 1.125rem;
+}
+
+body .container .logo1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .logo1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  position: absolute;
+  right: 5%;
+}
+
+body .container .logo1 li {
+  margin-inline: 20px;
+}
+
+body .container .logo1 .logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body .container .logo1 .logo span {
+  color: orange;
+}
+
+body .container .logo1 a {
+  text-decoration: none;
+  color: black;
+}
+
+body .container .logo1 a :hover {
+  color: red;
+  text-decoration: underline;
+  background-color: yellow;
+}
+
+body .hero {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .hero .profile-pic {
+  width: 45%;
+}
+
+body .hero .profile-pic img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+body .hero .about p {
+  padding-inline: 15%;
+  line-height: 1.6rem;
+  text-align: justify;
+}
+
+body .hero .about .about-title {
+  margin-top: 2%;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
