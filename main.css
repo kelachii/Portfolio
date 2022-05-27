@@ -16,7 +16,7 @@ body .container .logo1 {
   display: flex;
 }
 
-body .container .logo1 ul {
+body .container .logo1 .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,6 +27,10 @@ body .container .logo1 ul {
 
 body .container .logo1 li {
   margin-inline: 20px;
+}
+
+body .container .logo1 .fa-bars {
+  display: none;
 }
 
 body .container .logo1 .logo {
@@ -66,8 +70,12 @@ body .hero .profile-pic {
 }
 
 body .hero .profile-pic img {
-  width: 100%;
   border-radius: 100%;
+  margin-bottom: 5%;
+}
+
+body .hero .about {
+  margin-top: 5%;
 }
 
 body .hero .about p {
@@ -79,5 +87,30 @@ body .hero .about p {
 body .hero .about .about-title {
   margin-top: 2%;
   font-weight: bold;
+}
+
+body footer {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer table {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 2%;
+}
+
+body footer table ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */

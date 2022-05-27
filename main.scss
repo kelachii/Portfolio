@@ -8,7 +8,7 @@ body{
     font-size: 1.125rem;
     .container .logo1{
         display: flex;
-        ul{
+       .nav ul{
             display: flex;
             list-style: none;
             position: absolute;
@@ -16,6 +16,9 @@ body{
         }
         li{
             margin-inline: 20px;
+        }
+        .fa-bars{
+            display: none;
         }
         .logo{
             font-weight: bold;
@@ -34,7 +37,9 @@ body{
             text-decoration: underline;
             background-color: yellow;
         }
+
     }
+
     .hero{
         position: relative;
         display: flex;
@@ -44,12 +49,12 @@ body{
         .profile-pic{
             width: 45%;
         img{
-            width: 100%;
             border-radius: 100%;
+            margin-bottom: 5%;
         }
         }  
         .about{
-    
+            margin-top: 5%;
         
             p{
                 padding-inline: 15%;
@@ -63,11 +68,35 @@ body{
         }
         }
 
-    footer{
+    footer {
+        width: 100%;
+        justify-content: center;
+
+        table{
+            justify-content: center;
+            width: 100%;
+            margin-top: 2%;
+            ul{
+                display: flex;
+                list-style: none;
+                justify-content: space-between;
+            }
+            
+        }
         
     }
 }
-
-
-
-
+// @media screen and (max-width: 440px) {
+//     body{
+//         .container .logo1{
+//            .nav ul{
+//                 display: none;
+//             }
+//             .fa-bars{
+//                 display: block;
+//                 position: absolute;
+//                 right: .5%;
+//             }
+//         }
+//     }
+// }
