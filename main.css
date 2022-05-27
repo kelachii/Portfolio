@@ -6,6 +6,7 @@
 }
 
 body {
+  background-color: grey;
   margin: 10%;
   font-size: 1.125rem;
 }
@@ -27,6 +28,10 @@ body .container .logo1 .nav ul {
 
 body .container .logo1 li {
   margin-inline: 20px;
+}
+
+body .container .logo1 li :hover {
+  cursor: pointer;
 }
 
 body .container .logo1 .fa-bars {
@@ -112,5 +117,9 @@ body footer table ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+body footer table a {
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */
