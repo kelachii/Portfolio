@@ -5,7 +5,7 @@
 }
 body{
     background-color: grey;
-    margin: 10%;
+    padding: 10%;
     font-size: 1.125rem;
     .container .logo1{
         display: flex;
@@ -59,16 +59,18 @@ body{
         }  
         .about{
             margin-top: 5%;
-        
-            p{
-                padding-inline: 15%;
-                line-height: 1.6rem;
-                text-align: justify;
-            }
-            .about-title{
-                margin-top: 2%;
-                font-weight: bold;
-            }
+        }
+        p{
+            padding-inline: 15%;
+            line-height: 1.6rem;
+        }
+        .about-title{
+            margin-top: 2%;
+            font-weight: bold;
+        }
+        .h1{
+            font-size: 3em;
+            font-weight: bold;
         }
         }
 
@@ -92,17 +94,31 @@ body{
         
     }
 }
-// @media screen and (max-width: 440px) {
-//     body{
-//         .container .logo1{
-//            .nav ul{
-//                 display: none;
-//             }
-//             .fa-bars{
-//                 display: block;
-//                 position: absolute;
-//                 right: .5%;
-//             }
-//         }
-//     }
-// }
+@media screen and (max-width: 440px) {
+    body{
+        .container .logo1{
+           .nav ul{
+                display: none;
+            }
+            .fa-bars{
+                display: block;
+                position: absolute;
+                right: .5%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 980px) {
+    body{
+        .hero{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+        .profile-pic{
+            justify-content: center;
+        }
+    }
+    
+}

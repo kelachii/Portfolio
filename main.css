@@ -7,7 +7,7 @@
 
 body {
   background-color: grey;
-  margin: 10%;
+  padding: 10%;
   font-size: 1.125rem;
 }
 
@@ -83,14 +83,18 @@ body .hero .about {
   margin-top: 5%;
 }
 
-body .hero .about p {
+body .hero p {
   padding-inline: 15%;
   line-height: 1.6rem;
-  text-align: justify;
 }
 
-body .hero .about .about-title {
+body .hero .about-title {
   margin-top: 2%;
+  font-weight: bold;
+}
+
+body .hero .h1 {
+  font-size: 3em;
   font-weight: bold;
 }
 
@@ -121,5 +125,38 @@ body footer table ul {
 
 body footer table a {
   color: black;
+}
+
+@media screen and (max-width: 440px) {
+  body .container .logo1 .nav ul {
+    display: none;
+  }
+  body .container .logo1 .fa-bars {
+    display: block;
+    position: absolute;
+    right: .5%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  body .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .profile-pic {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
