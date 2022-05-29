@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Raleway:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Poppins:wght@300;400;700&family=Raleway:wght@100;400&display=swap');
 body{
+    font-family: poppins ;
     background-color: grey;
     padding: 10%;
     font-size: 1.125rem;
@@ -71,6 +74,7 @@ body{
         .h1{
             font-size: 3em;
             font-weight: bold;
+            font-family: oxygen ;
         }
         }
 
@@ -110,14 +114,26 @@ body{
 }
 @media screen and (max-width: 980px) {
     body{
+        padding: 0;
         .hero{
             display: flex;
             flex-wrap: wrap;
             flex-direction: column-reverse;
             justify-content: center;
+            .profile-pic{
+                width: 100%;
+                img{
+                    width: 100%;
+                    justify-content: centerS;
+                }
+            }
+            .about{
+                text-align: center;
+            }
+
         }
-        .profile-pic{
-            justify-content: center;
+        footer{
+
         }
     }
     
