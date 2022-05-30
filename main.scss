@@ -1,15 +1,19 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Raleway:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Poppins:wght@300;400;700&family=Raleway:wght@100;400&display=swap');
 body{
-    font-family: poppins ;
-    background-color: grey;
-    padding: 10%;
-    font-size: 1.125rem;
+        font-family: poppins ;
+        color: #20303c;
+        width: 100%;
+        height: 100%;
+        margin: 3em;
+        padding: 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        background-color: transparent;
+        box-sizing: border-box;
+        vertical-align: baseline;
+    }
     .container .logo1{
         display: flex;
        .nav ul{
@@ -97,7 +101,30 @@ body{
         }
         
     }
+
+@media screen and (max-width: 320px) {
+    body{
+        line-height: 1.38;
+    }
+    footer{
+        .contact{
+            table{
+                display: table;
+                tr{
+                    display:block;
+                }
+            }
+        }
+    }
+
 }
+@media screen and (max-width: 110px) {
+    body{
+        font-size: 14px;
+    }
+
+}
+
 @media screen and (max-width: 440px) {
     body{
         .container .logo1{
@@ -107,14 +134,14 @@ body{
             .fa-bars{
                 display: block;
                 position: absolute;
-                right: .5%;
+                right: .2%;
             }
         }
     }
 }
 @media screen and (max-width: 980px) {
     body{
-        padding: 0;
+        display: block;
         .hero{
             display: flex;
             flex-wrap: wrap;
@@ -126,9 +153,6 @@ body{
                     width: 100%;
                     justify-content: centerS;
                 }
-            }
-            .about{
-                text-align: center;
             }
 
         }

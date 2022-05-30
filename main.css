@@ -1,26 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Raleway:wght@100;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Poppins:wght@300;400;700&family=Raleway:wght@100;400&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 body {
   font-family: poppins;
-  background-color: grey;
-  padding: 10%;
-  font-size: 1.125rem;
+  color: #20303c;
+  width: 100%;
+  height: 100%;
+  margin: 3em;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
 }
 
-body .container .logo1 {
+.container .logo1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .container .logo1 .nav ul {
+.container .logo1 .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,40 +31,40 @@ body .container .logo1 .nav ul {
   right: 5%;
 }
 
-body .container .logo1 li {
+.container .logo1 li {
   margin-inline: 20px;
 }
 
-body .container .logo1 li :hover {
+.container .logo1 li :hover {
   cursor: pointer;
 }
 
-body .container .logo1 .fa-bars {
+.container .logo1 .fa-bars {
   display: none;
 }
 
-body .container .logo1 .logo {
+.container .logo1 .logo {
   font-weight: bold;
   font-size: 1.4rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body .container .logo1 .logo span {
+.container .logo1 .logo span {
   color: orange;
 }
 
-body .container .logo1 a {
+.container .logo1 a {
   text-decoration: none;
   color: black;
 }
 
-body .container .logo1 a :hover {
+.container .logo1 a :hover {
   color: red;
   text-decoration: underline;
   background-color: yellow;
 }
 
-body .hero {
+.hero {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,43 +75,43 @@ body .hero {
           justify-content: space-between;
 }
 
-body .hero .profile-pic {
+.hero .profile-pic {
   width: 45%;
 }
 
-body .hero .profile-pic img {
+.hero .profile-pic img {
   border-radius: 100%;
   margin-bottom: 5%;
 }
 
-body .hero .about {
+.hero .about {
   margin-top: 5%;
 }
 
-body .hero p {
+.hero p {
   padding-inline: 15%;
   line-height: 1.6rem;
 }
 
-body .hero .about-title {
+.hero .about-title {
   margin-top: 2%;
   font-weight: bold;
 }
 
-body .hero .h1 {
+.hero .h1 {
   font-size: 3em;
   font-weight: bold;
   font-family: oxygen;
 }
 
-body footer {
+footer {
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-body footer table {
+footer table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -117,7 +119,7 @@ body footer table {
   margin-top: 2%;
 }
 
-body footer table ul {
+footer table ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,8 +129,26 @@ body footer table ul {
           justify-content: space-between;
 }
 
-body footer table a {
+footer table a {
   color: black;
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    line-height: 1.38;
+  }
+  footer .contact table {
+    display: table;
+  }
+  footer .contact table tr {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 110px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -138,13 +158,13 @@ body footer table a {
   body .container .logo1 .fa-bars {
     display: block;
     position: absolute;
-    right: .5%;
+    right: .2%;
   }
 }
 
 @media screen and (max-width: 980px) {
   body {
-    padding: 0;
+    display: block;
   }
   body .hero {
     display: -webkit-box;
@@ -168,9 +188,6 @@ body footer table a {
     -webkit-box-pack: centerS;
         -ms-flex-pack: centerS;
             justify-content: centerS;
-  }
-  body .hero .about {
-    text-align: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
