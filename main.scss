@@ -1,137 +1,165 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Raleway:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Poppins:wght@300;400;700&family=Raleway:wght@100;400&display=swap');
-body{
-        font-family: poppins ;
-        color: #20303c;
-        width: 100%;
-        height: 100%;
-        margin: 3em;
-        padding: 0;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        background-color: transparent;
-        box-sizing: border-box;
-        vertical-align: baseline;
-    }
-    .container .logo1{
+
+body {
+    font-family: poppins;
+    color: #20303c;
+    width: 100%;
+    height: 100%;
+    margin: 3em;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: transparent;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+.container .logo1 {
+    display: flex;
+
+    .nav ul {
         display: flex;
-       .nav ul{
-            display: flex;
-            list-style: none;
-            position: absolute;
-            right: 5%;
-        }
-        li{
-            margin-inline: 20px;
-            :hover{
-                cursor:pointer;
-            }
-        }
-        .fa-bars{
-            display: none;
-        }
-        .logo{
-            font-weight: bold;
-            font-size: 1.4rem;
-            font-family: Arial, Helvetica, sans-serif;
-            span{
-                color: orange;
-            }
-        }
-        a{
-            text-decoration: none;
-            color: black;
-        }
-        a :hover{
-            color: red;
-            text-decoration: underline;
-            background-color: yellow;
-        }
-
+        list-style: none;
+        position: absolute;
+        right: 5%;
     }
 
-    .hero{
-        position: relative;
-        display: flex;
-        margin-top: 8%;
-        justify-content: space-between;
-        
-        .profile-pic{
-            width: 45%;
-        img{
-            border-radius: 100%;
-            margin-bottom: 5%;
-        }
-        }  
-        .about{
-            margin-top: 5%;
-        }
-        p{
-            padding-inline: 15%;
-            line-height: 1.6rem;
-        }
-        .about-title{
-            margin-top: 2%;
-            font-weight: bold;
-        }
-        .h1{
-            font-size: 3em;
-            font-weight: bold;
-            font-family: oxygen ;
-        }
-        }
+    li {
+        margin-inline: 20px;
 
-    footer {
-        width: 100%;
-        justify-content: center;
-        table{
-            justify-content: center;
-            width: 100%;
-            margin-top: 2%;
-
-            ul{
-                display: flex;
-                list-style: none;
-                justify-content: space-between;
-            }
-            a{
-                color: black;
-            }
+        :hover {
+            cursor: pointer;
         }
-        
     }
 
-@media screen and (max-width: 320px) {
-    body{
-        line-height: 1.38;
+    .fa-bars {
+        display: none;
     }
-    footer{
-        .contact{
-            table{
-                display: table;
-                tr{
-                    display:block;
-                }
-            }
+
+    .logo {
+        font-weight: bold;
+        font-size: 1.4rem;
+        font-family: Arial, Helvetica, sans-serif;
+
+        span {
+            color: orange;
         }
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a :hover {
+        color: red;
+        text-decoration: underline;
+        background-color: yellow;
     }
 
 }
+
+.hero {
+    position: relative;
+    display: flex;
+    margin-top: 8%;
+    justify-content: space-between;
+
+    .profile-pic {
+        width: 45%;
+
+        img {
+            border-radius: 100%;
+            margin-bottom: 5%;
+        }
+    }
+
+    .about {
+        margin-top: 5%;
+    }
+
+    p {
+        padding-inline: 15%;
+        line-height: 1.6rem;
+    }
+
+    .about-title {
+        margin-top: 2%;
+        font-weight: bold;
+    }
+
+    .h1 {
+        font-size: 3em;
+        font-weight: bold;
+        font-family: oxygen;
+    }
+}
+
+footer {
+    width: 100%;
+    justify-content: center;
+
+    table {
+        justify-content: center;
+        width: 100%;
+        margin-top: 2%;
+
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+        }
+
+        a {
+            color: #20303c;
+        }
+    }
+
+    .table-mobile {
+        display: none;
+    }
+
+}
+
 @media screen and (max-width: 110px) {
-    body{
+    body {
         font-size: 14px;
     }
 
 }
 
+@media screen and (max-width: 320px) {
+    body {
+        line-height: 1.38;
+    }
+
+    footer {
+        .table-mobile {
+            display: block;
+
+            span {
+                font-weight: 900;
+                padding-right: 1rem;
+            }
+
+            a {
+                margin: 0.5rem;
+            }
+        }
+    }
+
+}
+
 @media screen and (max-width: 440px) {
-    body{
-        .container .logo1{
-           .nav ul{
+    body {
+        .container .logo1 {
+            .nav ul {
                 display: none;
             }
-            .fa-bars{
+
+            .fa-bars {
                 display: block;
                 position: absolute;
                 right: .2%;
@@ -139,17 +167,35 @@ body{
         }
     }
 }
+
+@media screen and (max-width: 700px) {
+    body {
+        .contact {
+            .table-desktop {
+                display: none;
+
+                .table-mobile {
+                    display: table-cell;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 980px) {
-    body{
+    body {
         display: block;
-        .hero{
+
+        .hero {
             display: flex;
             flex-wrap: wrap;
             flex-direction: column-reverse;
             justify-content: center;
-            .profile-pic{
+
+            .profile-pic {
                 width: 100%;
-                img{
+
+                img {
                     width: 100%;
                     justify-content: centerS;
                 }
@@ -157,5 +203,5 @@ body{
 
         }
     }
-    
+
 }
