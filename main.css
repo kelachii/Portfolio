@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Raleway:wght@100;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Poppins:wght@300;400;700&family=Raleway:wght@100;400&display=swap");
-
 body {
   font-family: poppins;
   color: #20303c;
@@ -13,7 +12,7 @@ body {
   line-height: 1.5;
   background-color: transparent;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   vertical-align: baseline;
 }
 
@@ -72,8 +71,8 @@ body {
   display: flex;
   margin-top: 8%;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero .profile-pic {
@@ -108,14 +107,14 @@ body {
 footer {
   width: 100%;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer table {
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   margin-top: 2%;
 }
@@ -126,8 +125,8 @@ footer table ul {
   display: flex;
   list-style: none;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer table a {
@@ -148,40 +147,43 @@ footer .table-mobile {
   body {
     line-height: 1.38;
   }
-
-  footer .table-mobile {
-    display: block;
-  }
-
-  footer .table-mobile span {
-    font-weight: 900;
-    padding-right: 1rem;
-  }
-
-  footer .table-mobile a {
-    margin: 0.5rem;
-  }
 }
 
 @media screen and (max-width: 440px) {
   body .container .logo1 .nav ul {
     display: none;
   }
-
   body .container .logo1 .fa-bars {
     display: block;
     position: absolute;
     right: .2%;
+    top: 5rem;
+  }
+  body .container .logo1 footer .table-mobile {
+    display: block;
+  }
+  body .container .logo1 footer .table-mobile span {
+    font-weight: 900;
+    padding-right: 1rem;
+  }
+  body .container .logo1 footer .table-mobile a {
+    margin: 0.5rem;
   }
 }
 
 @media screen and (max-width: 700px) {
-  body .contact .table-desktop {
+  body .table-desktop {
     display: none;
   }
-
-  body .contact .table-desktop .table-mobile {
-    display: table-cell;
+  body .table-mobile {
+    display: block;
+  }
+  body .table-mobile span {
+    font-weight: 900;
+    padding-right: 1rem;
+  }
+  body .table-mobile a {
+    margin: 0.5rem;
   }
 }
 
@@ -189,32 +191,28 @@ footer .table-mobile {
   body {
     display: block;
   }
-
   body .hero {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   body .hero .profile-pic {
     width: 100%;
   }
-
   body .hero .profile-pic img {
     width: 100%;
     -webkit-box-pack: centerS;
-    -ms-flex-pack: centerS;
-    justify-content: centerS;
+        -ms-flex-pack: centerS;
+            justify-content: centerS;
   }
 }
-
 /*# sourceMappingURL=main.css.map */
